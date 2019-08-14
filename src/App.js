@@ -9,7 +9,7 @@ import Header from './Header/Header';
 function App() {
   return (
     <React.Fragment>
-      {/* <Preloader /> */}
+      <Preloader />
       <Header />
       <script src="./js/jquery.min.js"></script>
       <script src="./js/popper.min.js"></script>
