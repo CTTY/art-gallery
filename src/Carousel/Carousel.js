@@ -4,11 +4,11 @@ import '../style.css';
 class Carousel extends Component(){
     render(){
         return(
-            <Carousel>
+            <Carousel  className="carousel-inner">
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="holder.js/800x400?text=First slide&bg=373940"
+                        src="../img/bg-img/1.jpg"
                         alt="First slide"
                     />
                     <Carousel.Caption>
@@ -19,7 +19,7 @@ class Carousel extends Component(){
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="holder.js/800x400?text=Second slide&bg=282c34"
+                        src="./img/bg-img/2.jpg"
                         alt="Third slide"
                     />
                     <Carousel.Caption>
@@ -30,7 +30,7 @@ class Carousel extends Component(){
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="holder.js/800x400?text=Third slide&bg=20232a"
+                        src="./img/bg-img/19.jpg"
                         alt="Third slide"
                     />
                     <Carousel.Caption>
