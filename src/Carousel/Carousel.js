@@ -4,7 +4,7 @@ import '../style.css';
 class Carousel extends Component(){
     render(){
         return(
-            <Carousel  className="carousel-inner">
+            <Carousel>
                 <Carousel.Item>
                     <img
                         className="d-block w-100"

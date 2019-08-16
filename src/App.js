@@ -10,7 +10,7 @@ import Carousel from './Carousel/Carousel';
 function App() {
   return (
     <React.Fragment>
-      <Preloader />
+
       <Header />
       <Carousel />
       <script src="./js/jquery.min.js"></script>
