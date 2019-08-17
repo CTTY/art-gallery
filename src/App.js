@@ -1,18 +1,16 @@
 import React from 'react';
+import logo from './logo.svg';
 import './App.css';
-import './style.css'
+import './style.css';
 
 import Preloader from './Preloader/Preloader';
 import Header from './Header/Header';
-import Carousel from './Carousel/Carousel';
-
 
 function App() {
   return (
     <React.Fragment>
-
+      <Preloader />
       <Header />
-      <Carousel />
       <script src="./js/jquery.min.js"></script>
       <script src="./js/popper.min.js"></script>
       <script src="./js/bootstrap.min.js"></script>

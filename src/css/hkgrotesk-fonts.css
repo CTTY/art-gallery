@@ -53,7 +53,7 @@
   font-weight: 600;
   font-style: normal;
 }
-@font-face {
+/* @font-face {
   font-family: 'HK Grotesk';
   src: url('../fonts/HKGrotesk-Bold.eot');
   src: url('../fonts/HKGrotesk-Bold.eot?#iefix') format('embedded-opentype'),
@@ -63,7 +63,7 @@
     url('../fonts/HKGrotesk-Bold.svg#HKGrotesk-Bold') format('svg');
   font-weight: bold;
   font-style: normal;
-}
+} */
 @font-face {
   font-family: 'HK Grotesk';
   src: url('../fonts/HKGrotesk-MediumItalic.eot');
