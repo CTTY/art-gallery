@@ -12,12 +12,19 @@ import Col from 'react-bootstrap/Col';
 const styles = { height: 400, width: "100%" };
 
 class Carousel extends React.PureComponent {
-  constructor(props) {
+  
+    constructor(props) {
     super(props);
     this.state = {
-      autoplay: true
+      autoplay: true,
+    //   slides: [
+    //       (<img src="https://www.w3schools.com/bootstrap/ny.jpg" className="d-block w-100" alt="..." />),
+    //       (<img src="https://www.w3schools.com/bootstrap/ny.jpg" className="d-block w-100" alt="..." />),
+    //       (<img src="https://www.w3schools.com/bootstrap/ny.jpg" className="d-block w-100" alt="..." />),
+    //   ],
     };
   }
+
   
   render() {
     let { leftIcon, rightIcon } = this.state;
@@ -25,7 +32,7 @@ class Carousel extends React.PureComponent {
     <div class="mona-projects-area section-padding-80-0 mb-50">
     <Container>
         <Row style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '100vh'}}>
-        <Col md={18} md={9}>
+        <Col md={24} md={12}>
             <RBCarousel
             animation={true}
             autoplay={this.state.autoplay}
@@ -54,6 +61,14 @@ class Carousel extends React.PureComponent {
                     </p>
                 </Media.Body>
             </Media> */}
+            {/* <div className="carousel-item active">
+                slides={this.state.slides}
+                <div className="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                </div>
+            </div> */}
+            
             <div className="carousel-item active">
                 <img src="https://www.w3schools.com/bootstrap/ny.jpg" className="d-block w-100" alt="..." />
                 <div className="carousel-caption d-none d-md-block">
