@@ -25,7 +25,7 @@ function Footer(){
                             />
                 </Navbar.Brand>
 
-                <p>A place of art.</p>
+                <h3>A place of art.</h3>
                 {/* <div class="copywrite-text">
                   <p>&copy; 
     Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is built with &hearts; by <a href="https://www.linkedin.com/in/yexiang-chang/" target="_blank">Shawn Chang  Abby Lu</a>
@@ -36,30 +36,30 @@ function Footer(){
 
 
                     
-                    <div class="col-12 col-lg-4 col-xl-3">
-                        <div class="single-footer-widget mb-60">
+            <div class="col-12 col-lg-4 col-xl-3">
+                <div class="single-footer-widget mb-60">
                             
-                            <h4 class="widget-title">Contact</h4>
+                    <h4 class="widget-title">Contact</h4>
                             
-                            <div class="footer-content mb-30">
-                                <h4>+1-607-379-4550</h4>
-                                <h6>Maplewood Apartment, Ithaca, NY 14850</h6>
-                            </div>
-                            
-                            <div class="footer-social-info">
-                                <a href="#" class="facebook" data-toggle="tooltip" data-placement="top" title="Facebook"><i
-                                        class="fa fa-facebook"></i></a>
-                                <a href="#" class="twitter" data-toggle="tooltip" data-placement="top" title="Twitter"><i
-                                        class="fa fa-twitter"></i></a>
-                                <a href="#" class="pinterest" data-toggle="tooltip" data-placement="top" title="Pinterest"><i
-                                        class="fa fa-pinterest"></i></a>
-                                <a href="#" class="instagram" data-toggle="tooltip" data-placement="top" title="Instagram"><i
-                                        class="fa fa-instagram"></i></a>
-                                <a href="#" class="youtube" data-toggle="tooltip" data-placement="top" title="YouTube"><i
-                                        class="fa fa-youtube-play"></i></a>
-                            </div>
-                        </div>
+                    <div class="footer-content mb-30">
+                        <h4>+1-607-379-4550</h4>
+                        <h6>Maplewood Apartment, Ithaca, NY 14850</h6>
                     </div>
+                            
+                    <div class="footer-social-info">
+                        <a href="#" class="facebook" data-toggle="tooltip" data-placement="top" title="Facebook"><i
+                                class="fa fa-facebook"></i></a>
+                        <a href="#" class="twitter" data-toggle="tooltip" data-placement="top" title="Twitter"><i
+                                class="fa fa-twitter"></i></a>
+                        <a href="#" class="pinterest" data-toggle="tooltip" data-placement="top" title="Pinterest"><i
+                                class="fa fa-pinterest"></i></a>
+                        <a href="#" class="instagram" data-toggle="tooltip" data-placement="top" title="Instagram"><i
+                                class="fa fa-instagram"></i></a>
+                        <a href="#" class="youtube" data-toggle="tooltip" data-placement="top" title="YouTube"><i
+                                class="fa fa-youtube-play"></i></a>
+                    </div>
+                </div>
+            </div>
 
                 </div>
             </div>
