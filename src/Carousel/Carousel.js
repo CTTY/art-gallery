@@ -70,21 +70,21 @@ class Carousel extends React.PureComponent {
             </div> */}
             
             <div className="carousel-item active">
-                <img src="https://www.w3schools.com/bootstrap/ny.jpg" className="d-block w-100" alt="..." />
+                <img src="../img/bg-img/1.jpg" className="d-block w-100" alt="..." />
                 <div className="carousel-caption d-none d-md-block">
                     <h5>First slide label</h5>
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                 </div>
             </div>
             <div className="carousel-item active">
-                <img src="https://pbs.twimg.com/profile_images/1147673817537490944/FfVoY021_400x400.jpg" className="d-block w-100" alt="..." />
+                <img src="../img/bg-img/2.jpg" className="d-block w-100" alt="..." />
                 <div className="carousel-caption d-none d-md-block">
                     <h5>First slide label</h5>
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                 </div>
             </div>
             <div className="carousel-item active">
-                <img src="https://data.whicdn.com/images/274547293/superthumb.jpg" className="d-block w-100" alt="..." />
+                <img src="../img/bg-img/19.jpg" className="d-block w-100" alt="..." />
                 <div className="carousel-caption d-none d-md-block">
                     <h5>First slide label</h5>
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>

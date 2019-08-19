@@ -16,11 +16,12 @@ function Header(){
                         
                         {/* logo */}
                         {/* <a className="nav-brand" href="index.html"><img src="./img/core-img/logo.jpeg" alt="" height="60" width="60"></img></a> */}
-                        <Navbar.Brand href="index.html">
+                        <Navbar.Brand href="/index.html">
                             <img
                                 alt=""
                                 src="../img/core-img/logo.jpeg"
                                 height="60"
+                                width="60"
                                 className="nav-brand"
                             />
                         </Navbar.Brand>
@@ -42,6 +43,7 @@ function Header(){
                                     <li><a href="../projects.html">- Projects</a></li>
                                     <li><a href="../designer.html">- Designer</a></li>
                                     <li><a href="../developers.html">- Developers</a></li>
+                                    <li><a href="../developers.html">- Log in</a></li>
                                     </ul>
                                 </li>
                                 <li className="current-item"><a href="./projects.html">Projects</a></li>
@@ -51,6 +53,8 @@ function Header(){
                                     <li><a href="./developers.html">- Developers</a></li>
                                     </ul>
                                 </li>
+                                <li><a href="../developers.html"> Log in</a></li>
+                                <li><a href="../developers.html"> Design Manager</a></li>
                                 </ul>
                             </div>
                         </div>

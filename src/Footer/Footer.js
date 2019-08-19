@@ -6,21 +6,22 @@ import Navbar from 'react-bootstrap/Navbar'
 
 function Footer(){
     return (
-        <div class="footer-area section-padding-80-0">
-            <div class="container">
-                <div class="row justify-content-between">
+        <div className="footer-area section-padding-80-0">
+            <div className="container">
+                <div className="row justify-content-between">
 
 
                     
-            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-              <div class="single-footer-widget mb-60">
+            <div className="col-12 col-sm-6 col-lg-4 col-xl-3">
+              <div className="single-footer-widget mb-60">
 
                 {/* <a href="#" class="d-block mb-4"><img src="./img/core-img/logo.jpeg" height="60" width="60" alt=""></a> */}
-                <Navbar.Brand href="index.html">
+                <Navbar.Brand href="/index.html" className="d-block mb-4">
                             <img
                                 alt=""
                                 src="../img/core-img/logo.jpeg"
                                 height="60"
+                                width="60"
                                 className="nav-brand"
                             />
                 </Navbar.Brand>
@@ -36,27 +37,27 @@ function Footer(){
 
 
                     
-            <div class="col-12 col-lg-4 col-xl-3">
-                <div class="single-footer-widget mb-60">
+            <div className="col-12 col-lg-4 col-xl-3">
+                <div className="single-footer-widget mb-60">
                             
-                    <h4 class="widget-title">Contact</h4>
+                    <h4 className="widget-title">Contact</h4>
                             
-                    <div class="footer-content mb-30">
+                    <div className="footer-content mb-30">
                         <h4>+1-607-379-4550</h4>
                         <h6>Maplewood Apartment, Ithaca, NY 14850</h6>
                     </div>
                             
-                    <div class="footer-social-info">
-                        <a href="#" class="facebook" data-toggle="tooltip" data-placement="top" title="Facebook"><i
-                                class="fa fa-facebook"></i></a>
-                        <a href="#" class="twitter" data-toggle="tooltip" data-placement="top" title="Twitter"><i
-                                class="fa fa-twitter"></i></a>
-                        <a href="#" class="pinterest" data-toggle="tooltip" data-placement="top" title="Pinterest"><i
-                                class="fa fa-pinterest"></i></a>
-                        <a href="#" class="instagram" data-toggle="tooltip" data-placement="top" title="Instagram"><i
-                                class="fa fa-instagram"></i></a>
-                        <a href="#" class="youtube" data-toggle="tooltip" data-placement="top" title="YouTube"><i
-                                class="fa fa-youtube-play"></i></a>
+                    <div className="footer-social-info">
+                        <a href="#" className="facebook" data-toggle="tooltip" data-placement="top" title="Facebook"><i
+                                className="fa fa-facebook"></i></a>
+                        <a href="#" className="twitter" data-toggle="tooltip" data-placement="top" title="Twitter"><i
+                                className="fa fa-twitter"></i></a>
+                        <a href="#" className="pinterest" data-toggle="tooltip" data-placement="top" title="Pinterest"><i
+                                className="fa fa-pinterest"></i></a>
+                        <a href="#" className="instagram" data-toggle="tooltip" data-placement="top" title="Instagram"><i
+                                className="fa fa-instagram"></i></a>
+                        <a href="#" className="youtube" data-toggle="tooltip" data-placement="top" title="YouTube"><i
+                                className="fa fa-youtube-play"></i></a>
                     </div>
                 </div>
             </div>
