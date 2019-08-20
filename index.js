@@ -19,21 +19,26 @@ app.post('/api/form', (req, res) => {
         `
 
         let transporter = nodemailer.createTransport({
-            host: 'smtp.gmail.com',
-            port: '465',
-            auth:{
-                user: 'testlululu123@gmail.com',
-                pass: 'Secretpassword'
-            }
+            service: 'gmail',
+            auth: {
+                   user: 'testlululu123@gmail.com',
+                   pass: 'Secretpassword'
+               }
         })
 
-        transporter.sendMail((err, info) => {
-            if (err) {
-                return console.log(err)
-            }
-            console.log('Message sent: %s', info.message)
-            console.log('Message URL: %s', nodemailer.getTestMessageUrl(info))
-        })
+        const mailOptions = {
+            from: 'sender@email.com', // sender address
+            to: 'to@email.com', // list of receivers
+            subject: 'Subject of your email', // Subject line
+            html: '<p>Your html here</p>'// plain text body
+          };
+
+          transporter.sendMail(mailOptions, function (err, info) {
+            if(err)
+              console.log(err)
+            else
+              console.log(info);
+         });
     })
 })
 
