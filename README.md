@@ -6,4 +6,5 @@ mvn spring-boot:run
 
 ### start the client:
 ```npm install && npm start```
-```npm run dev```
+
+```npm install && npm run dev```
