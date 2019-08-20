@@ -66,6 +66,7 @@ class Header extends Component {
                                     </li>
                                     <li><a href="/Login"> Log in</a></li>
                                     <li><a href="/DesignManager"> Design Manager</a></li>
+                                    <li><a href="/Email"> Email</a></li>
                                     </ul>
                                 </div>
                             </div>
