@@ -42,6 +42,7 @@ class Header extends Component {
                 <li><a href="/Login"> Log in</a></li>,
                 <li><a href="/DesignManager"> Design Manager</a></li>,
                 <li><a href="/Email"> Email</a></li>,
+                <li><Nav.Link href="/" onSelect={this.handleMenuClick}>Log out</Nav.Link></li>
             ]
         } else {
             menuItems=[
@@ -66,7 +67,6 @@ class Header extends Component {
                 <li><a href="/Login"> Log in</a></li>,
                 <li><a href="/DesignManager"> Design Manager</a></li>,
                 <li><a href="/Email"> Email</a></li>,
-                <li><Nav.Link href="/" onSelect={this.handleMenuClick}>Log out</Nav.Link></li>
             ]
         }
 
