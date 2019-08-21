@@ -94,7 +94,7 @@ class App extends Component {
           window.location.href = 'https://github.com/CTTY/art-gallery'; 
           return null;
           }}/>
-          <Route exact path="/Projects" component={RBCarousel} />
+          <Route exact path="/" component={RBCarousel} />
           <Route exact path="/Email" component={Email} />
           <Route path="/login" 
                  render={(props) => <Login onLogin={this.handleLogin} {...props} />}></Route>

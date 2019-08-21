@@ -51,13 +51,13 @@ class Header extends Component {
                                     <li><a href="#">Pages</a>
                                         <ul className="dropdown">
                                         <li><a href="../index.html">- Home</a></li>
-                                        <li><a href="/Projects">- Projects</a></li>
+                                        <li><a href="/">- Projects</a></li>
                                         <li><a href="../designer.html">- Designer</a></li>
                                         <li><a href="../developers.html">- Developers</a></li>
-                                        <li><a href="../developers.html">- Log in</a></li>
+                                        <li><a href="/Login">- Log in</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="/Projects"> Projects</a></li>
+                                    <li><a href="/"> Projects</a></li>
                                     <li><a href="#">About Us</a>
                                         <ul className="dropdown">
                                         <li><a href="./designer.html">- Designer</a></li>
