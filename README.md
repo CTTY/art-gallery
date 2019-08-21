@@ -15,6 +15,9 @@ The gallery page for ArtCollectionWebsite, we are using React here!
 ```$ cd server```
 ```$ mvn spring-boot:run```
 
+### run nodejs server:
+```$ npm start server```
+
 ### run nodejs server along with react:
 ```$ npm install && npm run dev```
 
