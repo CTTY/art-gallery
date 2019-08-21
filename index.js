@@ -27,10 +27,10 @@ app.post('/api/form', (req, res) => {
         })
 
         const mailOptions = {
-            from: 'sender@email.com', // sender address
-            to: 'to@email.com', // list of receivers
-            subject: 'Subject of your email', // Subject line
-            html: '<p>Your html here</p>'// plain text body
+            from: req.body.from, // sender address
+            to: 'lumingabby@gmail.com', // list of receivers
+            subject: req.body.title, // Subject line
+            html: req.body.content// plain text body
           };
 
           transporter.sendMail(mailOptions, function (err, info) {
