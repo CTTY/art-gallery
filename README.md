@@ -1,22 +1,25 @@
 # art-gallery
 The gallery page for ArtCollectionWebsite, we are using React here!
 
-### start db
-```$ cd /usr/local/mysql/support-files```
-
-```$ ./mysql.server start```
-
-### login db
+### login to mysql
 ```$ cd /usr/local/mysql/bin```
 
 ```$ ./mysql -u root -p```
 
-### run the server:
+### start mysql
+```$ cd /usr/local/mysql/support-files```
+
+```$ ./mysql.server start```
+
+### run spring server:
+```$ cd server```
 ```$ mvn spring-boot:run```
 
-### start the client:
-```$ npm install && npm start```
-
+### run nodejs server along with react:
 ```$ npm install && npm run dev```
 
-### to run locally, need to use browser router instead of Hash router when deploying
+### start react client solely:
+```$ cd client```
+```$ npm install && npm start```
+
+#### when deploying on web, using HashRouter instead of BrowserRouter
