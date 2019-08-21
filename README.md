@@ -11,12 +11,15 @@ The gallery page for ArtCollectionWebsite, we are using React here!
 
 ```$ ./mysql.server start```
 
-### run the server:
+### run spring server:
+```$ cd server```
 ```$ mvn spring-boot:run```
 
-### start the client:
-```$ npm install && npm start```
-
+### run nodejs server along with react:
 ```$ npm install && npm run dev```
+
+### start react client solely:
+```$ cd client```
+```$ npm install && npm start```
 
 #### when deploying on web, using HashRouter instead of BrowserRouter
