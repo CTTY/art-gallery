@@ -10,9 +10,65 @@ import { Layout, Menu, Dropdown, Icon } from 'antd';
 class Header extends Component {
     constructor(props) {
         super(props);
+        this.handleMenuClick = this.handleMenuClick.bind(this); 
     }
 
+    handleMenuClick() {
+        this.props.onLogout();
+      }
+
     render(){
+        let menuItems;
+        if(this.props.currentUser){
+            menuItems=[
+                <li><a href="https://github.com/CTTY/art-gallery">Extra</a></li>,
+                <li><a href="../index.html">Home</a></li>,
+                <li><a href="#">Pages</a>
+                    <ul className="dropdown">
+                    <li><a href="../index.html">- Home</a></li>
+                    <li><a href="/">- Projects</a></li>
+                    <li><a href="../designer.html">- Designer</a></li>
+                    <li><a href="../developers.html">- Developers</a></li>
+                    <li><a href="/Login">- Log in</a></li>
+                    </ul>
+                </li>,
+                <li><a href="/"> Projects</a></li>,
+                <li><a href="#">About Us</a>
+                    <ul className="dropdown">
+                    <li><a href="./designer.html">- Designer</a></li>
+                    <li><a href="./developers.html">- Developers</a></li>
+                    </ul>
+                </li>,
+                <li><a href="/Login"> Log in</a></li>,
+                <li><a href="/DesignManager"> Design Manager</a></li>,
+                <li><a href="/Email"> Email</a></li>,
+            ]
+        } else {
+            menuItems=[
+                <li><a href="https://github.com/CTTY/art-gallery">Extra</a></li>,
+                <li><a href="../index.html">Home</a></li>,
+                <li><a href="#">Pages</a>
+                    <ul className="dropdown">
+                    <li><a href="../index.html">- Home</a></li>
+                    <li><a href="/">- Projects</a></li>
+                    <li><a href="../designer.html">- Designer</a></li>
+                    <li><a href="../developers.html">- Developers</a></li>
+                    <li><a href="/Login">- Log in</a></li>
+                    </ul>
+                </li>,
+                <li><a href="/"> Projects</a></li>,
+                <li><a href="#">About Us</a>
+                    <ul className="dropdown">
+                    <li><a href="./designer.html">- Designer</a></li>
+                    <li><a href="./developers.html">- Developers</a></li>
+                    </ul>
+                </li>,
+                <li><a href="/Login"> Log in</a></li>,
+                <li><a href="/DesignManager"> Design Manager</a></li>,
+                <li><a href="/Email"> Email</a></li>,
+                <li><Nav.Link href="/" onSelect={this.handleMenuClick}>Log out</Nav.Link></li>
+            ]
+        }
 
         return (
             <div className="header-area">
@@ -45,28 +101,7 @@ class Header extends Component {
                                 {/* navbar */}
                                 <div className="classynav">
                                     <ul id="nav">
-                                    {/* <li><Link to="/index" replace> Home</Link></li> */}
-                                    <li><a href="https://github.com/CTTY/art-gallery">Extra</a></li>
-                                    <li><a href="../index.html">Home</a></li>
-                                    <li><a href="#">Pages</a>
-                                        <ul className="dropdown">
-                                        <li><a href="../index.html">- Home</a></li>
-                                        <li><a href="/">- Projects</a></li>
-                                        <li><a href="../designer.html">- Designer</a></li>
-                                        <li><a href="../developers.html">- Developers</a></li>
-                                        <li><a href="/Login">- Log in</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="/"> Projects</a></li>
-                                    <li><a href="#">About Us</a>
-                                        <ul className="dropdown">
-                                        <li><a href="./designer.html">- Designer</a></li>
-                                        <li><a href="./developers.html">- Developers</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="/Login"> Log in</a></li>
-                                    <li><a href="/DesignManager"> Design Manager</a></li>
-                                    <li><a href="/Email"> Email</a></li>
+                                        {menuItems}
                                     </ul>
                                 </div>
                             </div>
