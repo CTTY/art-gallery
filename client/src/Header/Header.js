@@ -75,8 +75,6 @@ class Header extends Component {
                 <div className="main-header-area">
                     <div className="classy-nav-container breakpoint-off">
                         <Navbar className="classy-navbar justify-content-between navbar-fixed-top" expand="lg" variant="light" bg="dark" fixed="top">
-                            {/* background curve */}
-                            <div className="bg-curve" style={{'background-image' : 'url(1' + '../img/core-img/curve.png' + ')'}}></div>
                             
                             {/* logo */}
                             <Navbar.Brand href="/index.html">
