@@ -15,15 +15,18 @@ class Carousel extends React.PureComponent {
   
     constructor(props) {
     super(props);
+
     this.state = {
       autoplay: true,
-    //   slides: [
-    //       (<img src="https://www.w3schools.com/bootstrap/ny.jpg" className="d-block w-100" alt="..." />),
-    //       (<img src="https://www.w3schools.com/bootstrap/ny.jpg" className="d-block w-100" alt="..." />),
-    //       (<img src="https://www.w3schools.com/bootstrap/ny.jpg" className="d-block w-100" alt="..." />),
-    //   ],
+      images: null,
     };
   }
+
+//   componentDidMount(){
+//       fetch('api-endpoint')
+//       .then(response => response.json())
+//       .then(images => this.setState({images: images}))
+//   }
 
   
   render() {
@@ -64,33 +67,18 @@ class Carousel extends React.PureComponent {
             onSelect={this.onSelect}
             ref={r => (this.slider = r)}
             version={4}
+            infiniteLoop='true'
             >
-            {/* <Media>
-                <img
-                    width={64}
-                    height={64}
-                    className="mr-3"
-                    src="https://www.w3schools.com/bootstrap/ny.jpg"
-                    alt="Generic placeholder"
-                />
-                <Media.Body>
-                    <h5>Media Heading</h5>
-                    <p>
-                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
-                    ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at,
-                    tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
-                    Donec lacinia congue felis in faucibus.
-                    </p>
-                </Media.Body>
-            </Media> */}
-            {/* <div className="carousel-item active">
-                slides={this.state.slides}
-                <div className="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                </div>
-            </div> */}
             
+            {/* {
+                this.state.images.map( image => {
+                    return <div>
+                        <img src={ image.path }/>
+                        <p>{ image.description }</p>
+                    </div>
+                })
+            } */}
+                        
             <div className="carousel-item active">
                 <img src="../img/bg-img/1.jpg" className="d-block w-100" alt="..." />
                 <div className="carousel-caption d-none d-md-block">
@@ -127,6 +115,13 @@ class Carousel extends React.PureComponent {
                 />
                 </div>
                 <div className="carousel-caption">Youtube</div>
+            </div> */}
+            {/* <div className="carousel-item active">
+                slides={this.state.slides}
+                <div className="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                </div>
             </div> */}
             </RBCarousel>
         </Col>
