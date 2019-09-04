@@ -16,6 +16,7 @@ import DesignManager from './DesignManager/DesignManager';
 import RBCarousel from './Carousel/Carousel';
 import Login from './Login/Login';
 import PrivateRoute from './Private/Private';
+import Email from './Email/Email';
 
 
 
@@ -87,13 +88,17 @@ class App extends Component {
     return (
       <React.Fragment>
         {/* <Preloader /> */}
-        <Header />
+        <Header 
+        isAuthenticated={this.state.isAuthenticated}
+        currentUser={this.state.currentUser}
+        onLogout={this.handleLogout}/>
         <Switch>
           <Route path='/redirectToStatic' component={() => { 
           window.location.href = 'https://github.com/CTTY/art-gallery'; 
           return null;
           }}/>
-          <Route exact path="/Projects" component={RBCarousel} />
+          <Route exact path="/" component={RBCarousel} />
+          <Route exact path="/Email" component={Email} />
           <Route path="/login" 
                  render={(props) => <Login onLogin={this.handleLogin} {...props} />}></Route>
           <PrivateRoute authenticated={this.state.isAuthenticated} path="/DesignManager" component={DesignManager} handleLogout={this.handleLogout}></PrivateRoute>

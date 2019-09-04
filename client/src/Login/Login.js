@@ -4,7 +4,6 @@ import Container from 'react-bootstrap/Container';
 import { login } from '../Utils/APIUtils';
 import { ACCESS_TOKEN } from '../Constants/Constants';
 
-
 import './Login.css';
 import '../style.css'
 
@@ -34,8 +33,8 @@ class Login extends Component {
             </div>
 
             {/* login form */}
-            <div class="mona-projects-area section-padding-80-0 mb-50">
-            <Container>
+            
+            <Container style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '30vh'}}>
                 <div className="login-container">
                     <div className="login-content">
                         <AntWrappedLoginForm onLogin={this.props.onLogin} />
@@ -43,7 +42,6 @@ class Login extends Component {
                 </div>
             </Container>
 
-            </div>
             </React.Fragment>
 
         );
@@ -84,29 +82,32 @@ class LoginForm extends Component {
         const { getFieldDecorator } = this.props.form;
         return (
             <Form onSubmit={this.handleSubmit} className="login-form">
-                <FormItem>
+                <FormItem className="email">
                     {getFieldDecorator('usernameOrEmail', {
                         rules: [{ required: true, message: 'Please input your username or email!' }],
                     })(
                     <Input 
-                        prefix={<Icon type="user" />}
-                        size="large"
+                        prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)'}}/>}
+                        size="40"
                         name="usernameOrEmail" 
-                        placeholder="Username or Email" />    
+                        placeholder="Username or Email"
+                         />    
                     )}
                 </FormItem>
-                <FormItem>
+                <FormItem className="password">
                 {getFieldDecorator('password', {
                     rules: [{ required: true, message: 'Please input your Password!' }],
                 })(
                     <Input 
-                        prefix={<Icon type="lock" />}
-                        size="large"
+                        prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)'}} />}
+                        size="40"
+                        
                         name="password" 
                         type="password" 
                         placeholder="Password"  />                        
                 )}
                 </FormItem>
+                <br/>
                 <FormItem>
                     <Button type="primary" htmlType="submit" size="large" className="login-form-button">Login</Button>
                 </FormItem>
